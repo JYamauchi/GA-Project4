@@ -1,4 +1,4 @@
-@import url('http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+@import url('//fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
 
 /* Overall Style */
 html {
@@ -137,7 +137,7 @@ li {
 }
 .leaflet-popup-content-wrapper {
 	padding:0;
-	opacity: 0.9;
+	opacity: 0.98;
 	transition-property: opacity;
     transition-duration: 0.5s;
     transition-timing-function: ease-out;

@@ -3,7 +3,10 @@ By Toby Schaeffer and Jared Yamauchi
 
 # Title: Restofy
 Date: May 26,2015
-What it contains: MapBox API, Yelp API, and Javascript map
+What it contains: MapBox API, DC Restaurant Health Inspection data.
+
+Heroku:  https://restofy.herokuapp.com
+Github:  https://github.com/JYamauchi/GA-Project4
 
 # Project Objectives:
 - The website should reveal the map of Washington, DC while showing all markers standing on the specific locations on the map. 
@@ -12,22 +15,25 @@ What it contains: MapBox API, Yelp API, and Javascript map
 - On each pop the restaurant's name, address, violation score, and reviews.
 
 # User Stories: 
-- Users should see a map as the main content of the website while also should see a sidebar displaying all restaurants' names and addresses on the right side of the page. 
-- Users may register to create their own account so that they have have their own profiles.
-- Users can browse the restaurants through the sidebar list as they can scroll all the way down until the last restaurant on the list. 
-- Users can move the view around the map and be able to click on the marker they want to look at. 
-- If an user tries to explore outside of the Washington, DC map, the view should automatically center back to the middle of Washington, DC.
+- Users should see a map as the main content of the website.  
+- Users can also see a sidebar displaying all restaurants' names and addresses.
+- Users can browse through restaurant names via the sidebar 
+- Users can select a restaurant name and be shown the selected restaurant on the map. 
+- Users can move the view around the map and can click on the marker they would like more details fo. 
 
--Main Page including the list of all Restaurants-
+-Main Page including the list of all Restaurants (MVP1)
 ![alt tag](https://github.com/JYamauchi/GA-Project4/blob/master/Project-4-UI-Index.png)
 
--Show Page of the Restaurant-
+-Show Page of the Restaurant (MVP2)
 ![alt tag](https://github.com/JYamauchi/GA-Project4/blob/master/Project-4-UI-Show.png)
 
 # Icebox: 
-- Users may can post on their comments. 
-- Adding star icons for violation and review scores that represent the rate from 1 to 10 stars. 
-- Adding the searchbar would be great as users can simply type the names of restaurants then zoom to the right locations. 
+- Users may log in.
+- Users can post on comments on restaurants, and respond to comments 
+- Users can star icons restaurants as favorites
+- Users can review scores that represent the rate from 1 to 10 stars. 
+- Users can search for restaurants, and map will select and zoom to the right locations. 
+- If an user tries to explore outside of the Washington, DC map, the view should automatically center back to the middle of Washington, DC.
 
 # Note:
-- To import the seed into the database, go to the command line and type "rake db:create" & "rake db:migrate", and then "rake db:seed". This will seed the database with basic info for restaurants in Washington, DC. It may takes a while to wait until complete importing all information into the database. 
+- Due to performance reasons, only the first 500 restaurant records will be displayed for MVP1.  All restaurants will be available for query in MVP2.   
