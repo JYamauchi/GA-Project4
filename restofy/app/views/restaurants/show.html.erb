@@ -1,6 +1,12 @@
 <div class='sidebar'>
- 		<%= render 'users/userForm' %>
-  		<div class='heading'>
+ 	<h2><%= @restaurant.name %><br>
+ 	<%= @restaurant.address %><br>
+ 	Last Inspection: <%= @violation.violation_text %><br>
+ 	Critical Violation: <%= @inspection.critical_violations %><br>
+
+
+ 	</h2>
+  	<div class='heading'>
   			<ul>
   				<li><h1>Restofy</h1></li>
   				<% if current_user %>
@@ -11,11 +17,12 @@
   				<li><button id="hide">Hide</button></li>
   				<li><button id="show">Show</button></li>
   			</ul>
-  		</div>
+  	</div>
   		<div class='sidebar-content'>
   			<%= yield :sidebar %>
   		</div>
-  		<div id='listings' class='listings'></div>
+  	<div id='listings' class='listings'></div>
+
   		
 </div>
-<div id='map' class='map'> </div>
+

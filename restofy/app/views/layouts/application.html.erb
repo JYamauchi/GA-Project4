@@ -15,23 +15,9 @@
   </head>
 
   <body>
-  	<div class='sidebar'>
- 		<%= render 'users/userForm' %>
-  		<div class='heading'>
-  			<ul>
-  				<li><h1>Restofy</h1></li>
-  				<% if current_user %>
-  					<li><h1><%= link_to 'Sign Out', destroy_user_session_path, :method => :delete %></h1></li>
-  				<% else %>
-  					<li><h1><%= link_to 'Sign In', new_user_session_path %></h1></li>
-  				<% end %>
-  			</ul>
-  		</div>
-  		<div id='listings' class='listings'></div>
-  		<%= yield %>
-  	</div>
-  	<div id='map' class='map'> </div>
+  	<%= yield %>
 
+  <div id='map' class='map'></div>
   </body>
 
 </html>

@@ -14,3 +14,12 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("#listings").hide();
+    });
+    $("#show").click(function(){
+        $("#listings").show();
+    });
+});

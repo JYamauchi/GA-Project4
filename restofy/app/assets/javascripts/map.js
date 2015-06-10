@@ -25,7 +25,7 @@ $(document).ready(function(){
     var last_inspection = locale.feature.last_inspection ? locale.feature.last_inspection : null
 
     // Place each marker on the map, adding details if they exist
-    var popup = '<h3>' + prop.title + '</h3><div>' + prop.description + '<div><small class="quiet">' ;
+    var popup = '<h3>' + prop.title + '</h3><div>' + prop.description + '<div><small class="quiet">' + '<button class="trigger">Say Hi</button>' ;
     if (last_inspection) {
       popup+="<span class='popup-details'> Date of Last Inspection:  " + last_inspection.date + "</span>"
       popup+="<span class='popup-details'> # Critical Violations:  " + last_inspection.critical_violations + "</span>"
@@ -62,5 +62,10 @@ $(document).ready(function(){
   });
     popup += '</div>';
     locale.bindPopup(popup);
+
+  });
+
+  $('#map').on('click', '.trigger', function() {
+    alert('Hello from Toronto!');
   });
 });
